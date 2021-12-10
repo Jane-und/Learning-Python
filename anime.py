@@ -9,7 +9,7 @@ def main():
     baseurl = "https://www.agefans.vip/"
 
     datalist = getData(baseurl)
-    savepath = "/Users/jiangxujie/Desktop/MAPPA.xls"
+    savepath = "anime.xls"
 
     saveData(datalist, savepath)
 
