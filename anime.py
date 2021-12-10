@@ -26,10 +26,9 @@ def getData(baseurl):
 
 
 def askURL(url):
-    head = {  # 模拟浏览器头部信息，向豆瓣服务器发送消息
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36"
+    head = {  
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/..."
     }
-    # 用户代理表示告诉豆瓣服务器我们是什么类型的浏览器，本质上是告诉浏览器我们可以接收什么水平的文件内容
     request = urllib.request.Request(url, headers=head)
     html = ""
     try:
@@ -49,7 +48,7 @@ def saveData(datalist, savepath):
     print("save...")
 
 
-if __name__ == "__main__":  # 当程序执行时
+if __name__ == "__main__": 
     main()
-    # 调用函数
-    # print("爬取完毕")
+  
+
